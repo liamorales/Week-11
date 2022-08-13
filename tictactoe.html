@@ -10,13 +10,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron">
             <h1 id="h1">Let's play some Tic Tac Toe!</h1>
             <button id="btn1" type="button" class="btn btn-success" onclick="game()">Start</button>
            <a href="tictactoe.html"><button id="btn2" type="button" class="btn btn-primary">Restart</button></a>
-        </div>
         <div>
-        <h3><b>How to play</b></h3>
+        <h3 id="h_name"><b>How to play</b></h3>
         <ol class="list-group list-group-numbered">
             <li class="list-group-item"> First click on the Start</li>
             <li class="list-group-item">Next single click or double click in a square</li>
@@ -47,6 +45,11 @@
         </div>
 
     </div>
+    <div id="liveAlertPlaceholder">
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Click here when you've finished the Game</button>
+    </div>
+
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="tictactoe.js"></script>
 </body>
